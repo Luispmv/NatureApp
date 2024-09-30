@@ -25,12 +25,12 @@ import com.example.natureapp.ui.theme.NatureAppTheme
 
 
 @Composable
-fun CardNature(imageUrl: String) {
+fun CardNature(imageUrl: String, header: String, textstr: String) {
     Card(
         modifier = Modifier
             .padding(8.dp)
             .clickable {}
-            .width(300.dp),
+            .fillMaxWidth(),
         shape = RoundedCornerShape(8.dp)
     ) {
         Column {
@@ -47,8 +47,8 @@ fun CardNature(imageUrl: String) {
                 modifier = Modifier
                     .padding(16.dp)
             ) {
-                Text(text = "Selva Amazónica", fontSize = 30.sp, fontWeight = FontWeight.Bold)
-                Text(text = "La Selva Amazónica es la mayor selva tropical del mundo, conocida por su increíble biodiversidad y su papel crucial en la regulación del clima global.")
+                Text(text = header, fontSize = 30.sp, fontWeight = FontWeight.Bold)
+                Text(text = textstr)
             }
         }
     }
@@ -59,6 +59,9 @@ fun CardNature(imageUrl: String) {
 fun CardNaturePreview() {
     NatureAppTheme {
         // Ejemplo usando una URL de imagen pública
-        CardNature(imageUrl = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Amazona_parrots_collage.jpg")
+        CardNature(imageUrl = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Amazona_parrots_collage.jpg",
+            "Amazonas",
+            "La Selva Amazónica es la mayor selva tropical del mundo, conocida por su increíble biodiversidad y su papel crucial en la regulación del clima global."
+        )
     }
 }

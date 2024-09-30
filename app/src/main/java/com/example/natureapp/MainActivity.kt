@@ -41,7 +41,10 @@ class MainActivity : ComponentActivity() {
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
-                    CardNature(imageUrl = "https://images.pexels.com/photos/2739664/pexels-photo-2739664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+//                    CardNature(imageUrl = "https://images.pexels.com/photos/2739664/pexels-photo-2739664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+//                        "Amazonas",
+//                        "La Selva Amazónica es la mayor selva tropical del mundo, conocida por su increíble biodiversidad y su papel crucial en la regulación del clima global.")
+                    NatureCardsList()
                 }
             }
         }
