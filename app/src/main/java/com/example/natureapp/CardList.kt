@@ -2,7 +2,6 @@ package com.example.natureapp
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.runtime.Composable
-import java.nio.file.WatchEvent
 
 //import androidx.compose.foundation.layout.Column
 //import androidx.compose.foundation.rememberScrollState
@@ -12,7 +11,7 @@ import java.nio.file.WatchEvent
 //import java.lang.reflect.Modifier
 
 @Composable
-fun NatureCardsList() {
+fun NatureCardsList(modifier: androidx.compose.ui.Modifier) {
     LazyColumn(
 
     ) {
